@@ -1,6 +1,6 @@
 import Foundation
 
-class ResolveAPI {
+public class ResolveAPI {
     public static var tagIDResolved: ((UnsafePointer<CChar>, Int) -> Void)?
     let host = "https://resolver.livingweb.app"
     let authorizationString = "Bearer 2|h4WlcnVeOTFtcuu4l3P01pdUNHzMbc5l1VIDQCHC"
