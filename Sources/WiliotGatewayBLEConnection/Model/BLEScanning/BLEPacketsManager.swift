@@ -3,7 +3,7 @@
 
 import Foundation
 import Combine
-import UIKit
+//import UIKit
 
 class BLEPacketsManager: NSObject {
     private var cancellables: Set<AnyCancellable> = []
@@ -77,7 +77,7 @@ class BLEPacketsManager: NSObject {
     private func handlePixelPacket(_ blePacket: BLEPacket) {
         
         let payloadStr = blePacket.data.hexEncodedString(options: .upperCase)
-        print("BLEPacketsManager payloadStr: \(payloadStr)")
+        //print("BLEPacketsManager payloadStr: \(payloadStr)")
         
 
         //triggerNotification(for: blePacket)
